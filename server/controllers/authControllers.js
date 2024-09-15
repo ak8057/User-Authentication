@@ -35,10 +35,7 @@ const signup = async (req, res, next) => {
 
 
 const login = async (req, res, next) => {
-  try{
-
-  }catch
-  
+ 
 };
 
 export default {signup, login}
