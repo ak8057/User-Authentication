@@ -11,7 +11,7 @@ import {
   Button,
 } from "antd";
 import { Link } from "react-router-dom";
-import loginimg from "../assets/online-registration-illustration-concept-free-vector.jpg";
+import loginimg from "../assets/background.jpg";
 import useLogin from "../hooks/useLogin";
 const Login = () => {
 

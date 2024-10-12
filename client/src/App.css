@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url('./assets/10.webp'); /* Add your image URL */
+  background-image: url("./assets/city1.jpg");
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(10px);
@@ -19,8 +19,8 @@ body {
 
   /* background-image: linear-gradient(
     135deg,
-    rgba(144, 19, 254, 0.8),
-    rgba(247, 103, 106, 0.8)
+    rgba(34, 0, 255, 0.8),
+    rgba(103, 192, 247, 0.8)
   ); */
 
   color: white;
@@ -29,15 +29,41 @@ body {
 /* Glassmorphism effect */
 .form-container {
   background: rgba(255, 255, 255, 0.2); /* Transparent white */
+
   backdrop-filter: blur(15px); /* Frosted glass effect */
+
   border-radius: 12px;
-  padding: 40px;
+
+  padding: 10px;
+
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Softer, darker shadow for depth */
-  width: 70vw;
+
+  width: 65vw;
+
   max-width: 1200px;
+
   color: black;
+
   max-height: 100vh;
+
   border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for glass effect */
+}
+
+.form-container {
+  display: flex;
+
+  width: 900px;
+
+  max-width: 100%;
+
+  background-color: #fff;
+  border-radius: 12px;
+  /* padding: 10px; */
+  overflow: hidden;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  /* color: black; */
 }
 
 /* Row for form and image */
@@ -49,12 +75,16 @@ body {
 
 .form-column {
   text-align: center;
+  width: 50%;
 }
 
 .image-column {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  width: 50%;
+  /* height: 100%; */
+  overflow: hidden;
 }
 
 /* Form styling */
@@ -79,15 +109,34 @@ body {
 /* Image styling */
 .auth-img {
   width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  /* max-width: 500px;   */
+  /* border-radius: 10px; */
+  object-fit: cover;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
-.auth-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+input {
+  width: 100%;
+
+  padding: 10px 15px;
+
+  margin-bottom: 15px;
+
+  border-radius: 50px;
+
+  border: 1px solid #ddd;
+
+  outline: none;
+
+  background-color: #f9f9f9;
+
+  /* box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+input:focus {
+  border-color: #007bff;
 }
 
 /* Modern Button styling with hover effects */
@@ -131,6 +180,12 @@ body {
   color: rgba(64, 169, 255, 1);
 }
 
+.image-column,
+.form-column {
+  width: 100%;
+  height: 36rem;
+}
+
 /* Responsive layout for smaller devices */
 @media (max-width: 768px) {
   .form-container {
@@ -144,7 +199,7 @@ body {
   }
 
   .auth-img {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     width: 100%;
   }
 }
@@ -154,24 +209,20 @@ body {
   margin-bottom: 1.1rem;
 }
 
-
-
-
-
 /* profile */
 
-.profile-card{
+.profile-card {
   width: 500px;
 }
 
-.avatar{
-  margin-bottom:1.5rem;
+.avatar {
+  margin-bottom: 1.5rem;
 }
-.username{
-  text-transform: capitalize
+.username {
+  text-transform: capitalize;
 }
 
-.profile-btn{
+.profile-btn {
   margin-top: 1.3rem;
   width: 100%;
 }
